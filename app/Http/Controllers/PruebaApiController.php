@@ -15,14 +15,15 @@ class PruebaApiController extends Controller
         $response = $client->request('GET', 'people'); 
         $body = $response->getBody();
         $content =$body->getContents();
+        
         $arr = json_decode($content,TRUE);
         
-       
-        $arrName = array();
-        for ($i=0; $i < count($arr); $i++) { 
-            array_push($arrName, $arr[$results][$i]->name);
-        }
-       return $arrName;
+      //return $arr;
+
+    return view('welcome')->with(['pjs'=>$arr['results']]); 
+
+   
+  
      
     }
 }

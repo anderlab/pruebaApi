@@ -67,12 +67,12 @@
         <div class="flex-center position-ref full-height">
   
 
-            <div class="content">
+            {{-- <div class="content">
             <h1>PERSONAJES STAR WARS</h1>
             @foreach($pjs as $pj)
                <p>{{$pj['name']}}</p>
                @endforeach
-                </div>
+                </div> --}}
          
 
                 

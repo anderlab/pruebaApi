@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/pruebaApi','PruebaApiController@getstate');
+Route::get('/imgurApi','PruebaApiController@imgurApiView');
+Route::post('/imgurApi','PruebaApiController@imgurApi');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
